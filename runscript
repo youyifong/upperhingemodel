@@ -1,0 +1,15 @@
+#!/bin/bash
+
+batch=$(($1+1 + ($2-1)*10))
+bs=2
+
+# create logs dir if neccesary
+if [ ! -d logs ]; then
+  mkdir logs
+fi
+
+# performance benchmarking for upperhinge paper
+for setting in fastgrid2 fastgrid gridC; do
+   R -q --vanilla --args $bs $batch $setting upperhinge performance  <performance_MC.R >logs/performance_$setting$batch.out 2>>logs/performance_$setting$batch.out
+done
+

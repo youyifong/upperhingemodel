@@ -1,0 +1,7 @@
+# !/bin/bash
+
+for i in  `seq 1 2`; do
+srun     -t 5-0  --constraint=x10sle -n 10  --multi-prog config/yh$i.conf &
+done
+
+
