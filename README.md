@@ -4,16 +4,17 @@ This project contains the script and R code for the Monte Carlo studies and real
 
 
 There are two options to run Monte Carlo studies for speed comparison in Sec 4.1:
-  1) If you are in a SLURM distributed computing environment, you can execute superscript without any parameters, which calls runscript through configuration files under the config directory. This procedure requests 100 CPUs to run 100 jobs. 
-  2) Otherwise, you can directly execute runscript with two parameters: runscript 0 1. This procedure runs 1 job. 
-In both case, the number of MC replicates each job performs is controlled by the bs parameter in runscript.
+  1) If you are in a SLURM distributed computing environment, you can execute superscript without any parameters, which calls runscript through configuration files under the config directory. This requests 100 CPUs to run 100 jobs. 
+  2) Otherwise, you can directly execute runscript with two parameters: runscript 0 1. This runs 1 job. 
+  
+In both cases, the number of MC replicates each job performs is controlled by the bs parameter in runscript.
 
-To analyze speed comparison Monte Carlo results, source fastgrid2_performance_MC_summary.R, which creates summary tables.
+To analyze speed comparison Monte Carlo results, source fastgrid2_performance_MC_summary.R from an R prompt, which creates summary tables.
 
 
 To perform Monte Carlo studies, run submit.sh in a xxx distributed computing environment. It calls the call_sim.h file xxx. call_sim.h then runs run_sim.R with proper arguments. The Monte Carlo results are saved in files organized into subdirectories. 
 
-To analyze Monte Carlo results, source read_sims.R, which creates summary tables.
+To analyze Monte Carlo results, source read_sims.R from an R prompt, which creates summary tables.
 
 
 The data_example.R file replicates the data analysis example.
