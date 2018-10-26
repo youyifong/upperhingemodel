@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# create logs dir if neccesary
+if [ ! -d logs ]; then
+  mkdir logs
+fi
+
+# estimation and CI
+for i in `seq 1 16`; do
+    R -q --vanilla --args  $i  <run_sim.R >logs/est_$i.out  2>>logs/est_$i.out
+done
