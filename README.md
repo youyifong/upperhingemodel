@@ -1,6 +1,6 @@
 # upperhingemodel
 
-This project contains the script and R code for the Monte Carlo studies and real data analysis in Elder and Fong (2018). The estimation  methods themselves are implemented in the R package chngpt (https://cran.r-project.org/web/packages/chngpt) version 2018.10-17 or later. The R package kyotil (https://cran.r-project.org/web/packages/kyotil) is also needed for MC studies.
+This project contains the script and R code for the Monte Carlo studies and real data analysis in Elder and Fong (2018). The proposed  methods are implemented in the R package chngpt. The R package kyotil is also needed for some utility functions. Both packages are available from CRAN, and also included here to ensure version compatibility. 
 
 
 ---------------------------------------------------
