@@ -27,7 +27,7 @@ To analyze Monte Carlo results, run the content of read_sims.R script from an R 
 The data_example.R file replicates the data analysis example.
 
 
-
+---------------------------------------------------
 References:
 
 Elder and Fong (2018) Faster Grid Search Algorithm and Model-Robust Inference for Upper Hinge Generalized Linear Models. Under review.
