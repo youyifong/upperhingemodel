@@ -6,8 +6,8 @@ This project contains the script and R code for the Monte Carlo studies and real
 ---------------------------------------------------
 Monte Carlo studies for speed comparison in Sec 4.1:
 
-There are two options:
-    1) If you are in a SLURM distributed computing environment, you can execute the superscript file without any parameters, which calls runscript through configuration files under the config directory. This requests 100 CPUs to run 100 jobs. 
+There are two options:\\
+    1) If you are in a SLURM distributed computing environment, you can execute the superscript file without any parameters, which calls runscript through configuration files under the config directory. This requests 100 CPUs to run 100 jobs. \\
     2) Otherwise, you can directly execute the runscript file with two parameters: runscript 0 1. This runs 1 job. 
   
 In both cases, the number of MC replicates each job performs is controlled by the bs parameter in runscript.
@@ -30,4 +30,4 @@ The data_example.R file replicates the data analysis example.
 ---------------------------------------------------
 References:
 
-Elder and Fong (2018) Faster Grid Search Algorithm and Model-Robust Inference for Upper Hinge Generalized Linear Models. Under review.
+Elder and Fong (2018) Fast Grid Search Algorithm and Model-Robust Inference for Upper Hinge Generalized Linear Models. Under review.
