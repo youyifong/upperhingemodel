@@ -8,9 +8,9 @@ Monte Carlo studies for speed comparison in Sec 4.1:
 
 There are two options:
 
-    1) If you are in a SLURM distributed computing environment, you can execute the superscript file without any parameters, which calls runscript through configuration files under the config directory. This requests 100 CPUs to run 100 jobs. 
+   1) If you are in a SLURM distributed computing environment, you can execute the superscript file without any parameters, which calls runscript through configuration files under the config directory. This requests 100 CPUs to run 100 jobs. 
 
-    2) Alternatively, you can directly execute the runscript file with two parameters: runscript 0 1. This runs 1 job. 
+   2) Alternatively, you can directly execute the runscript file with two parameters: runscript 0 1. This runs 1 job. 
   
 In both cases, the number of MC replicates each job performs is controlled by the bs parameter in runscript.
 
